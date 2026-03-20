@@ -6,7 +6,8 @@ En este proyecto se implementa una lista simple en Rust que contiene los siguien
 - remove(Value : T): bool
 - contains(Value: T): bool
 - size(): usize
-- isEmpty(): bool
+- is_empty(): bool
+- iterator()
 
 
 ## Requisitos
