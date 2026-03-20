@@ -22,4 +22,10 @@ impl<T> Node<T> {
     pub fn get_next_mut(&mut self) -> Option<&mut Box<Node<T>>> {
         self.next.as_mut()
     }
+    pub fn take_next(&mut self) -> Option<Box<Node<T>>> {
+    self.next.take()
+    }
+    pub fn next_mut(&mut self) -> &mut Option<Box<Node<T>>> {
+    &mut self.next
+    }
 }
