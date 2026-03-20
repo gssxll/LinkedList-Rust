@@ -32,6 +32,6 @@ impl<T> LinkedList<T> {
     count
 }
     pub fn is_empty(&self) -> bool {
-        self.head.is_none()
+        self.head.is_none()it
     }
 }
