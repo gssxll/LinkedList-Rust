@@ -10,7 +10,7 @@ En este proyecto se implementa una lista simple en Rust que contiene los siguien
 
 
 ## Requisitos
-- 1. Rust 
+- Rust 
 
 Para instalar, ingrese a la siguiente página: https://rust-lang.org/learn/get-started/
 Ahí podrá encontrar las indicaciones necesarias para el editor que desee trabajar.
@@ -19,13 +19,4 @@ Para este proyecto el editor utilizado fue Visual Studio Code junto con la exten
 
 Después de instalar Rust, al ejecutar puede pedirle que descargue las Visual Studio C++ Build Tools.
 
-- 2. Cargo (incluido con Rust)
-
-## Estructura del proyecto
-
-src/
-  main.rs              — punto de entrada
-  structures/
-    LinkedList.rs      — struct y métodos de la lista
-    Node.rs            — struct y métodos del nodo
-    mod.rs             — declara los módulos
+- Cargo (incluido con Rust)
