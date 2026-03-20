@@ -1,2 +1,2 @@
-pub mod LinkedList<T>;
-pub mod Node<T>;
+pub mod LinkedList;
+pub mod Node;
