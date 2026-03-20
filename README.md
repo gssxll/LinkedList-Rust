@@ -21,11 +21,3 @@ Después de instalar Rust, al ejecutar puede pedirle que descargue las Visual St
 
 - 2. Cargo (incluido con Rust)
 
-## Estructura del proyecto
-
-src/
-  main.rs              — punto de entrada
-  structures/
-    LinkedList.rs      — struct y métodos de la lista
-    Node.rs            — struct y métodos del nodo
-    mod.rs             — declara los módulos
