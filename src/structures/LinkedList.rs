@@ -3,6 +3,10 @@ use crate::structures::Node::Node;
 pub struct LinkedList<T> {
     head: Option<Box<Node<T>>>,
 }
+pub struct Iter<'a, T> {
+    next: Option<&'a Node<T>>,
+}
+
 impl<T> LinkedList<T> {
     pub fn new() -> Self {
         LinkedList { head: None }
@@ -32,6 +36,54 @@ impl<T> LinkedList<T> {
     count
 }
     pub fn is_empty(&self) -> bool {
-        self.head.is_none()it
+        self.head.is_none()
+    }
+
+    pub fn contains(&self, value: &T) -> bool
+    where T: PartialEq
+    {
+    let mut current = self.head.as_deref();
+    while let Some(node) = current {
+        if node.get_value() == value {
+            return true;
+        }
+        current = node.get_next().map(|boxed| boxed.as_ref());
+    }
+    false
+    }
+
+    pub fn remove(&mut self, value: &T) -> bool 
+    where T: PartialEq
+    {
+    let mut current = &mut self.head;
+
+    loop {
+        match current {
+            None => return false,
+            Some(node) if node.get_value() == value => {
+                *current = node.take_next();
+                return true;
+            }
+            Some(node) => {
+                current = node.next_mut();
+            }
+        }
+    }
+    }
+    pub fn iterator(&self)->Iter<T>{
+        Iter{next:self.head.as_deref(),
+        }
     }
 }
+
+impl<'a, T> Iterator for Iter<'a, T> {
+    type Item = &'a T;
+
+    fn next(&mut self) -> Option<Self::Item> {
+        self.next.map(|node| {
+            self.next = node.get_next().map(|n| n.as_ref());
+            node.get_value()
+        })
+    }
+}
+
