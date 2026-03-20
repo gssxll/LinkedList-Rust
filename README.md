@@ -29,5 +29,5 @@ Los proyectos Rust se manejan desde terminal, si desea implementar este proyecto
 - Ejecutar
 ```
 git clone <https://github.com/gssxll/LinkedList-Rust>
-cd hello_Rust
+cd LinkedList
 cargo run
