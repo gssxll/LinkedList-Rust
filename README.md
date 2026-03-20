@@ -21,3 +21,13 @@ Para este proyecto el editor utilizado fue Visual Studio Code junto con la exten
 Después de instalar Rust, al ejecutar puede pedirle que descargue las Visual Studio C++ Build Tools.
 
 - Cargo (incluido con Rust)
+
+## Funcionamiento
+Los proyectos Rust se manejan desde terminal, si desea implementar este proyecto:
+- Clonar el repositorio
+- Acceder a la carpeta
+- Ejecutar
+```
+git clone <https://github.com/gssxll/LinkedList-Rust>
+cd hello_Rust
+cargo run
