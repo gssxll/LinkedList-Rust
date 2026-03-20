@@ -20,9 +20,4 @@ Para este proyecto el editor utilizado fue Visual Studio Code junto con la exten
 
 Después de instalar Rust, al ejecutar puede pedirle que descargue las Visual Studio C++ Build Tools.
 
-<<<<<<< HEAD
-- 2. Cargo (incluido con Rust)
-
-=======
 - Cargo (incluido con Rust)
->>>>>>> cb69ed5592c4ce39b932f7f1acec1fca421d8d32
