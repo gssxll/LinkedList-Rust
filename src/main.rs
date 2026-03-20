@@ -1,3 +1,5 @@
+mod structures;
+use crate::structures::LinkedList::LinkedList;
 fn main() {
     let mut list: LinkedList<i32> = LinkedList::new();
     list.add(1);   
