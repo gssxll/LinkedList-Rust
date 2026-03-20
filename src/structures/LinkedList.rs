@@ -47,7 +47,7 @@ impl<T> LinkedList<T> {
         if node.get_value() == value {
             return true;
         }
-        current = node.get_next().map(|boxed| boxed.as_ref());
+        current = node.get_next().map(|n| n.as_ref());
     }
     false
     }
